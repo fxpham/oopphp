@@ -13,6 +13,12 @@
       <li><a href="/hcn.php">Hình chữ nhât</a></li>
       <li><a href="/hv.php">Hình vuông</a></li>
     </ul>
+    <form action="includes/hcn.inc.php" method="post">
+      <p>Tính diện tích hình chữ nhật </p>
+      <input type="number" name="dai" placeholder="Chiều dài">
+      <input type="number" name="rong" placeholder="Chiều rộng">
+      <button type="submit" name="submit">Tính diện tích</button>
+    </form>
   </body>
 
 </html>
