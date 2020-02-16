@@ -1,16 +1,20 @@
 <?php
-
+// Class calculator.
 class Calc {
+  // Properties.
+  // Operator.
   private $operator;
+
   private $number1;
   private $number2;
 
+  // Constructor method.
   public function __construct(string $one, int $two, int $three) {
     $this->operator = $one;
     $this->number1 = $two;
     $this->number2 = $three;
   }
-
+  // Methods.
   public function calculator() {
     switch ($this->operator) {
       case 'add':
