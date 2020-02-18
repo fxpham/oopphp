@@ -8,13 +8,13 @@
 
   <body>
     <form action="includes/calc.inc.php" method="post">
-      <p>My own calculator</p>
+      <p>My own calculator 1</p>
       <input type="number" name="num1" placeholder="First number">
       <select name="oper">
-        <option value="add">Addition</option>
-        <option value="sub">Subtraction</option>
-        <option value="div">Division</option>
-        <option value="mul">Multiplication</option>
+        <option value="add">Cộng</option>
+        <option value="sub">Trừ</option>
+        <option value="div">Chia</option>
+        <option value="mul">Nhân</option>
       </select>
       <input type="number" name="num2" placeholder="Second number">
       <button type="submit" name="submit">Calculate</button>

@@ -2,7 +2,6 @@
 // Class calculator.
 class Calc {
   // Properties.
-  // Operator.
   private $operator;
 
   private $number1;
