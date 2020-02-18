@@ -1,0 +1,7 @@
+- Git client: https://git-scm.com/downloads
+
+- Course: https://github.com/fxpham/oopphp
+
+- Run localhost: php -S localhost:8080
+
+
