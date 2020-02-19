@@ -5,3 +5,48 @@
 - Run localhost: php -S localhost:8080
 
 
+-------Q&A-------
+
+1. XAMPP LÀ GÌ?
+-> là một phần mềm tạo máy chủ ảo cung cấp môi trường phát triển web, Trong XAMPP tích hợp sẵn các dịch vụ
+- X: Đa nền tảng (có thể là Windows, Linux, macOS)
+- Apache: là chương trình máy chủ đối thoại qua giao thức HTTP, giao thức này dùng để trao đổi giữa client và server.
+- MariaDB: Một hệ quản trị cơ sở dữ liệu tương tự MySQL
+- PHP: Trình biên dịch Ngôn ngữ PHP
+- Perl: Trình biên dịch Ngôn ngữ Perl
+
+Gọi chung là 1 web stack.
+
+
+2. TẠI SAO MUỐN LẬP TRÌNH PHP PHẢI CÀI ĐẶT  XAMPP?
+-> XAMPP cung cấp chương trình tạo máy chủ ảo tạo lập môi trường để chạy một web server.
+PHP là ngôn ngữ lập trình, để thực thi cần 1 trình biên dịch ngôn ngữ PHP, XAMPP đã cung cấp sẵn.
+
+Học lập trình PHP ko nhất thiết phải cài phần mềm XAMPP
+Tuỳ hệ điều hành mà có thể cài đặt WAMP (cho windows), LAMP (cho linux) hay các phần mềm khác.
+Học PHP chỉ cần cài đặt PHP và có thể dùng lệnh
+php -S localhost:[port_number] để khởi chạy 1 web server
+
+3. MÃ NGUỒN MỞ LÀ GÌ?
+-> Mã nguồn mở là những phần mềm được cung cấp dưới cả dạng sản phẩm (file thực thi) và nguồn (source),
+miễn phí về bản quyền: người dùng có quyền sửa đổi, cải tiến, phát triển, nâng cấp
+theo một số nguyên tắc chung qui định trong giấy phép mã nguồn mở (ví dụ General Public Licence – GPL) mà không cần xin phép ai
+
+4. MÃ NGUỒN ĐÓNG LÀ GÌ?
+-> Ngược lại với mã nguồn mở, người dùng phải mua sản phẩm và không thể truy cập hay sửa đổi mã nguồn của sản phẩm.
+
+5. Dreamweaver hay cái subline text hay cái visual studio code dùng để code php thì mình gọi chung là gì?
+->
+Visual Studio Code và Sublime text là các code editor (tạm dịch là trình soạn thảo code)
+Đối với visual studio ngoài chức năng chính của một code editor nó còn hỗ trợ build và debug,
+và các extension hỗ trợ các chức năng trong quá trình phát triển phần mềm.
+Visual studio code được phát triển bởi Microsoft và miễn phí.
+Sublime text thì có phí bản quyền.
+
+Dreamweaver hay PHP Storm là một IDE (Intergrated Development Environment) tạm dịch là môi trường phát triển tích hợp.
+Chủ yếu là để phát triển ứng dụng web.
+Ngoài chức năng của 1 editor nó sẽ hỗ trợ đầy đủ trong việc tạo một ứng dụng web như Live view (thay đổi code thấy ngay kết quả),
+debug, hỗ trợ remote web server...
+Cả Dreamweaver và PHP Storm có phí bản quyền.
+
+
