@@ -9,7 +9,7 @@
   <body>
     <h2>Bai tap</h2>
     <ul>
-      <li><a href="/baitap2/bt2.php">Bai tap 2</a></li>
+      <li><a href="./baitap2/bt2.php">Bai tap 2</a></li>
     </ul>
   </body>
 
