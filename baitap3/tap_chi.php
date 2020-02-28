@@ -7,12 +7,12 @@
   </head>
 
   <body>
-    <h2>Nhap Sach</h2>
+    <h2>Nhap Tap Chi</h2>
     <form action="./bt3.inc.php" method="post">
       <div>
         <div>
-        <label for="ma_tai_lieu">Ma Sach</label>
-        <input type="text" name="ma_tai_lieu" placeholder="Ma sach">
+        <label for="ma_tai_lieu">Ma Tap Chi</label>
+        <input type="text" name="ma_tai_lieu" placeholder="Ma tap chi">
         </div>
 
         <div>
@@ -41,7 +41,7 @@
           </select>
         </div>
       </div>
-      <input type="hidden" name="loai_tai_lieu" value="bao">
+      <input type="hidden" name="loai_tai_lieu" value="tap_chi">
       <button type="submit" name="submit">Them</button>
     </form>
   </body>
