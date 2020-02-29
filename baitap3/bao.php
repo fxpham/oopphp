@@ -22,7 +22,7 @@
 
         <div>
           <label for="so_luong">So luong</label>
-          <input type="text" name="so_luong" placeholder="So luong">
+          <input type="number" name="so_luong" placeholder="So luong">
         </div>
 
         <div>
