@@ -35,6 +35,8 @@ switch ($loai_tai_lieu) {
     break;
 }
 
+//Duyệt biến tai_lieu này ứng với mỗi phần tử trong biến tai_lieu = biến tl
+//VD : biến tai_lieu (sach, bao, tap chi), vòng lặp sẽ chạy từ tl=sach, tl=bao, tl=tapchi
 foreach ($tai_lieu as $tl) {
   echo $tl->getMaTaiLieu();
 }
