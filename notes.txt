@@ -50,3 +50,13 @@ debug, hỗ trợ remote web server...
 Cả Dreamweaver và PHP Storm có phí bản quyền.
 
 
+-------THÊM BRANCH-----
+Chọn Git Graph để chuyển đến thư mục cần tạo thêm branch
+Cách tạo = command line : git checkout -b [TenBranch]
+Cách tạo = giao diện : 
+b1 : click vào icon git ở góc dưới bên phải của thanh status 
+b2 : Chọn create new branch/đặt tên /enter
+b3 : Vào biểu tượng explore ở góc trên bên phải/tạo thêm file hoặc folder.
+b4 : vào biểu tượng sourch control (icon git) bên trái/+/.../commit stage/nhập mô tả chỉnh sửa
+b5 : push branch lên github.com : vào biểu tượng sourch control (icon git) bên trái/+/.../push
+
