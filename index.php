@@ -9,9 +9,9 @@
   <body>
     <h2>Tính diện tích hình học phẳng</h2>
     <ul>
-      <li><a href="/index.php">Tính diện tích hình học phẳng</a></li>
-      <li><a href="/hcn.php">Hình chữ nhât</a></li>
-      <li><a href="/hv.php">Hình vuông</a></li>
+      <li><a href="./index.php">Tính diện tích hình học phẳng</a></li>
+      <li><a href="./hcn.php">Hình chữ nhât</a></li>
+      <li><a href="./hv.php">Hình vuông</a></li>
     </ul>
   </body>
 
