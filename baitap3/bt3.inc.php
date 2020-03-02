@@ -20,7 +20,7 @@ switch ($loai_tai_lieu) {
     break;
   case 'bao':
     $ngay_phat_hanh = $_POST['ngay_phat_hanh'];
-    $bao = new Bao($ma_tai_lieu, $nha_xuat_ban, $so_luong, $ngay_phat_hanh);
+    $bao = new Bao($ma_tai_lieu, $nha_xuat_ban, $so_luong, strtotime($ngay_phat_hanh));
     $tai_lieu[] = $bao;
     break;
   case 'tap_chi':
