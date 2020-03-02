@@ -10,13 +10,16 @@ function getHocSinhs($dbh) {
   $stmt = $pdo->query($sql);
 
   while($row = $stmt->fetch()) {
-    echo $row['ten'] . '<br>';
+    echo 'Ho: ' . $row['ho'] . '<br>';
+    echo 'Ten: ' . $row['ten'] . '<br>';
+    echo 'Tuoi: ' . $row['tuoi'] . '<br>';
+    echo 'Que quan: ' . $row['que_quan'] . '<br>';
   }
 }
 
 function addHocSinh($dbh) {
   $table = "hoc_sinh";
-  $sql = "INSERT INTO $table (ho, ten, tuoi, que_quan) VALUES ('Nguyen', 'A', 21, 'Ho Chi Minh')";
+  $sql = "INSERT INTO $table (ho, ten, tuoi, que_quan) VALUES ('Nguyen', 'B', 22, 'Ho Chi Minh')";
 
   $pdo = $dbh->connect();
   $pdo->exec($sql);

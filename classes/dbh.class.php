@@ -18,6 +18,7 @@ class Dbh {
 
   public function connect() {
     try {
+      //mysql:host=localhost:33067;dbname=oop;charset=utf8
       $dsn = 'mysql:host=' . $this->dbHost . ';dbname=' . $this->dbName . ';charset=' . $this->charset;
       $pdo = new PDO($dsn, $this->userName, $this->passWord);
       $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
