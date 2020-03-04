@@ -1,0 +1,4 @@
+strtotime
+
+Hàm này để chuyển string ngày tháng về dạng timestamp (kiểu int)
+Chị search hàm này trên php.net để xem chi tiết nha.
