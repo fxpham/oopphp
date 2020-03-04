@@ -1,34 +1,99 @@
 <?php
 
 class SinhVien extends Nguoi {
+
   private $maSinhVien;
   private $lop;
   private $khoa;
   private $nganh;
 
-  public function __construct(string $cm, string $ht, int $t, string $gt, string $dc, 
-  int $dt, string $msv, string $l, string $k, string $ng ) 
-  {
-    parent::__construct($cm, $ht, $t, $gt, $dc, $dt);
+  public function __construct(string $cmnd,
+                              string $ho_ten,
+                              int $ngay_sinh,
+                              string $gioi_tinh,
+                              string $dia_chi,
+                              string $dien_thoai,
+                              string $msv,
+                              string $lop,
+                              string $khoa,
+                              string $nganh) {
+    parent::__construct($cmnd, $ho_ten, $ngay_sinh, $gioi_tinh, $dia_chi, $dien_thoai);
     $this->maSinhVien = $msv;
-    $this->lop = $l;
-	$this->khoa=$k;
-	$this->nganh=$ng;
+    $this->lop = $lop;
+    $this->khoa = $khoa;
+    $this->nganh = $nganh;
   }
 
-  public function get_maSinhVien() {
+
+  /**
+   * Get the value of maSinhVien
+   */
+  public function getMaSinhVien() {
     return $this->maSinhVien;
   }
 
-  public function get_lop() {
+  /**
+   * Set the value of maSinhVien
+   *
+   * @return  self
+   */
+  public function setMaSinhVien($maSinhVien) {
+    $this->maSinhVien = $maSinhVien;
+
+    return $this;
+  }
+
+  /**
+   * Get the value of lop
+   */
+  public function getLop() {
     return $this->lop;
   }
 
-	public function get_khoa() {
+  /**
+   * Set the value of lop
+   *
+   * @return  self
+   */
+  public function setLop($lop) {
+    $this->lop = $lop;
+
+    return $this;
+  }
+
+  /**
+   * Get the value of khoa
+   */
+  public function getKhoa() {
     return $this->khoa;
   }
-  
-  public function get_nganh() {
+
+  /**
+   * Set the value of khoa
+   *
+   * @return  self
+   */
+  public function setKhoa($khoa) {
+    $this->khoa = $khoa;
+
+    return $this;
+  }
+
+  /**
+   * Get the value of nganh
+   */
+  public function getNganh() {
     return $this->nganh;
+  }
+
+  /**
+   * Set the value of nganh
+   *
+   * @return  self
+   */
+  public function setNganh($nganh) {
+    $this->nganh = $nganh;
+
+    return $this;
   }
 }

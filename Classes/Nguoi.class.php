@@ -1,61 +1,132 @@
 <?php
-  class Nguoi {
+class Nguoi {
   // Properties
-	  private $cmnd;
-	  private $hoTen;
-	  private $tuoi;
-	  private $gioiTinh;
-	  private $diaChi;
-	  private $dienThoai;
-  
+  private $cmnd;
+  private $hoTen;
+  private $ngaySinh;
+  private $gioiTinh;
+  private $diaChi;
+  private $dienThoai;
+
   // Methods
-  public function __construct(string $cm, string $ht, int $t, string $gt, string $dc, int $dt) {
-    $this->cmnd = $cm; 
-	$this->hoTen=$ht;
-	$this->tuoi=$t;
-	$this->gioiTinh=$gt;
-	$this->diaChi=$dc;
-	$this->dienThoai=$dt;
-  }
-  function __destruct() {
-    echo "The people is {$this->hoTen}."; 
-  }
-  function set_cmnd($cmnd) {
+  public function __construct(string $cmnd, string $ho_ten, int $ngay_sinh, string $gioi_tinh, string $dia_chi, string $dien_thoai) {
     $this->cmnd = $cmnd;
+    $this->hoTen = $ho_ten;
+    $this->ngaySinh = $ngay_sinh;
+    $this->gioiTinh = $gioi_tinh;
+    $this->diaChi = $dia_chi;
+    $this->dienThoai = $dien_thoai;
   }
-  function get_cmnd() {
+
+  public function __destruct() {
+    echo "The people is {$this->hoTen}.";
+  }
+
+  /**
+   * Get the value of cmnd
+   */
+  public function getCmnd() {
     return $this->cmnd;
   }
-  function set_hoTen($ht) {
-    $this->hoTen = $ht;
+
+  /**
+   * Set the value of cmnd
+   *
+   * @return  self
+   */
+  public function setCmnd($cmnd) {
+    $this->cmnd = $cmnd;
+
+    return $this;
   }
-  function get_hoTen() {
+
+  /**
+   * Get the value of hoTen
+   */
+  public function getHoTen() {
     return $this->hoTen;
   }
-  function set_tuoi($t) {
-    $this->tuoi = $t;
+
+  /**
+   * Set the value of hoTen
+   *
+   * @return  self
+   */
+  public function setHoTen($hoTen) {
+    $this->hoTen = $hoTen;
+
+    return $this;
   }
-  function get_tuoi() {
-    return $this->tuoi;
+
+  /**
+   * Get the value of ngaySinh
+   */
+  public function getNgaySinh() {
+    return $this->ngaySinh;
   }
-  function set_gioiTinh($gt) {
-    $this->gioiTinh = $gt;
+
+  /**
+   * Set the value of ngaySinh
+   *
+   * @return  self
+   */
+  public function setNgaySinh($ngaySinh) {
+    $this->ngaySinh = $ngaySinh;
+
+    return $this;
   }
-  function get_gioiTinh() {
+
+  /**
+   * Get the value of gioiTinh
+   */
+  public function getGioiTinh() {
     return $this->gioiTinh;
   }
-  function set_diaChi($dc) {
-    $this->diaChi = $dc;
+
+  /**
+   * Set the value of gioiTinh
+   *
+   * @return  self
+   */
+  public function setGioiTinh($gioiTinh) {
+    $this->gioiTinh = $gioiTinh;
+
+    return $this;
   }
-  function get_diaChi() {
+
+  /**
+   * Get the value of diaChi
+   */
+  public function getDiaChi() {
     return $this->diaChi;
   }
-  function set_dienThoai($dt) {
-    $this->dienThoai = $dt;
+
+  /**
+   * Set the value of diaChi
+   *
+   * @return  self
+   */
+  public function setDiaChi($diaChi) {
+    $this->diaChi = $diaChi;
+
+    return $this;
   }
-  function get_dienThoai() {
+
+  /**
+   * Get the value of dienThoai
+   */
+  public function getDienThoai() {
     return $this->dienThoai;
   }
-  
+
+  /**
+   * Set the value of dienThoai
+   *
+   * @return  self
+   */
+  public function setDienThoai($dienThoai) {
+    $this->dienThoai = $dienThoai;
+
+    return $this;
+  }
 }
-?>
