@@ -69,3 +69,8 @@ Các nhân viên có thuộc tính riêng: công việc.
 **Yêu cầu**:
 1. Xây dựng các lớp CongNhan, KySu, NhanVien kế thừa từ lớp CanBo.
 2. Khởi tạo danh sách các cán bộ và xuất ra danh sách thông tin các cán bộ dưới dạng bảng
+
+
+** Bài tập 14 (bt1,2/73sgk) 
+a)	Tạo lớp người với các thuộc tính: số chứng minh nhân dân, họ tên, ngày sinh, giới tính, địa chỉ, điện thoại… và các phương thức: xuất CMND, họ tên, tuổi, giới tính, địa chỉ, điện thoại, phương thức thiết lập, phương thức hủy bỏ,…
+b)	Tạo lớp sinh viên kế thừa lớp người và có thêm các thuộc tính, mã sinh viên, lớp, khoa, ngành,… và các phương thức thiết lập, hủy bỏ, xuất mã sinh viên, lớp, khoa, ngành, nhập kết quả thi theo môn học, xuất kết quả thi theo môn học, phương thức thi lại, tính điểm trung bình,…
