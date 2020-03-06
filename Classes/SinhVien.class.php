@@ -8,16 +8,17 @@ class SinhVien extends Nguoi {
   private $nganh;
 
   public function __construct(string $cmnd,
-                              string $ho_ten,
+                              string $ho,
+                              string $ten,
                               int $ngay_sinh,
                               string $gioi_tinh,
                               string $dia_chi,
                               string $dien_thoai,
                               string $msv,
-                              string $lop,
-                              string $khoa,
-                              string $nganh) {
-    parent::__construct($cmnd, $ho_ten, $ngay_sinh, $gioi_tinh, $dia_chi, $dien_thoai);
+                              string $lop = '',
+                              string $khoa = '',
+                              string $nganh = '') {
+    parent::__construct($cmnd, $ho, $ten, $ngay_sinh, $gioi_tinh, $dia_chi, $dien_thoai);
     $this->maSinhVien = $msv;
     $this->lop = $lop;
     $this->khoa = $khoa;

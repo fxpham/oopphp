@@ -2,16 +2,18 @@
 class Nguoi {
   // Properties
   private $cmnd;
-  private $hoTen;
+  private $ho;
+  private $ten;
   private $ngaySinh;
   private $gioiTinh;
   private $diaChi;
   private $dienThoai;
 
   // Methods
-  public function __construct(string $cmnd, string $ho_ten, int $ngay_sinh, string $gioi_tinh, string $dia_chi, string $dien_thoai) {
+  public function __construct(string $cmnd, string $ho, string $ten, int $ngay_sinh, string $gioi_tinh, string $dia_chi, string $dien_thoai) {
     $this->cmnd = $cmnd;
-    $this->hoTen = $ho_ten;
+    $this->ho = $ho;
+    $this->ten = $ten;
     $this->ngaySinh = $ngay_sinh;
     $this->gioiTinh = $gioi_tinh;
     $this->diaChi = $dia_chi;
@@ -19,7 +21,7 @@ class Nguoi {
   }
 
   public function __destruct() {
-    echo "The people is {$this->hoTen}.";
+    // echo "The people is {$this->cmnd}.";
   }
 
   /**
@@ -41,19 +43,37 @@ class Nguoi {
   }
 
   /**
-   * Get the value of hoTen
+   * Get the value of ho
    */
-  public function getHoTen() {
-    return $this->hoTen;
+  public function getHo() {
+    return $this->ho;
   }
 
   /**
-   * Set the value of hoTen
+   * Set the value of ho
    *
    * @return  self
    */
-  public function setHoTen($hoTen) {
-    $this->hoTen = $hoTen;
+  public function setHo($ho) {
+    $this->ho = $ho;
+
+    return $this;
+  }
+
+  /**
+   * Get the value of ten
+   */
+  public function getTen() {
+    return $this->ten;
+  }
+
+  /**
+   * Set the value of ten
+   *
+   * @return  self
+   */
+  public function setTen($ten) {
+    $this->ten = $ten;
 
     return $this;
   }
@@ -129,4 +149,5 @@ class Nguoi {
 
     return $this;
   }
+
 }
