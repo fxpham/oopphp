@@ -73,4 +73,20 @@ Các nhân viên có thuộc tính riêng: công việc.
 
 ** Bài tập 14 (bt1,2/73sgk) 
 a)	Tạo lớp người với các thuộc tính: số chứng minh nhân dân, họ tên, ngày sinh, giới tính, địa chỉ, điện thoại… và các phương thức: xuất CMND, họ tên, tuổi, giới tính, địa chỉ, điện thoại, phương thức thiết lập, phương thức hủy bỏ,…
+
 b)	Tạo lớp sinh viên kế thừa lớp người và có thêm các thuộc tính, mã sinh viên, lớp, khoa, ngành,… và các phương thức thiết lập, hủy bỏ, xuất mã sinh viên, lớp, khoa, ngành, nhập kết quả thi theo môn học, xuất kết quả thi theo môn học, phương thức thi lại, tính điểm trung bình,…
+
+BÀI TẬP My sql_1/101 
+Tạo cơ sở dữ liệu bt_sv để lưu trữ thông tin sinh viên với các trường: Mã SV, Tên SV, ngày sinh, giới tính, địa chỉ, điện thoại, lớp, khoa, ngành, môn học và điểm số
+a)	Thực hiện chuẩn hóa cơ sở dữ liệu trên
+b)	Dưa CSDL vừa được chuẩn hóa vào máy với hệ quản trị CSDL MySQL
+
+BÀI TẬP My sql_2/101
+Tạo cơ sở dữ liệu bt2_vitinh để lưu trữ thông tin máy vi tính online với các trường: Model, loại sản phẩm, tên sản phẩm, nhà phân phối, địa chỉ nhà phân phối, điện thoại nhà phân phối, tên khách hàng, địa chỉ khách hàng, điện thoại khách hàng, số lượng xuất, số lượng nhập, đơn giá xuất, đơn giá nhập.
+a)	Thực hiện chuẩn hóa cơ sở dữ liệu trên
+b)	Dưa CSDL vừa được chuẩn hóa vào máy với hệ quản trị CSDL MySQL.
+
+BÀI TẬP My sql_3/101
+Tạo cơ sở dữ liệu bt3_khachsan để lưu trữ thông tin khách sạn online với các trường: Mã phòng, tên phòng, thông tin phòng, loại phòng, giá phòng, dịch vụ kèm theo, phí dịch vụ, nhân viên
+a)	Thực hiện chuẩn hóa cơ sở dữ liệu trên
+b)	Đưa CSDL vừa được chuẩn hóa vào máy với hệ quản trị CSDL MySQL
