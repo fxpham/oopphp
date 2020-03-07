@@ -42,7 +42,7 @@
                 <a class="nav-link active" href="./">Tổng quan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./sinh_vien.php">Sinh viên</a>
+                <a class="nav-link" href="../includes/sinh_vien.inc.php">Sinh viên</a>
               </li>
             </ul>
           </div>

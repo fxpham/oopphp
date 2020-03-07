@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Dashboard Template · Bootstrap</title>
 
-    <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <meta name="theme-color" content="#563d7c">
     <style>
       .bd-placeholder-img {
@@ -25,7 +25,7 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href="./assets/css/dashboard.css" rel="stylesheet">
+    <link href="../assets/css/dashboard.css" rel="stylesheet">
   </head>
 
   <body>
@@ -39,10 +39,10 @@
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link" href="./">Tổng quan</a>
+                <a class="nav-link" href="../">Tổng quan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./sinh_vien.php">Sinh viên</a>
+                <a class="nav-link active" href="../includes/sinh_vien.inc.php">Sinh viên</a>
               </li>
             </ul>
           </div>
@@ -52,12 +52,18 @@
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
             <h1 class="h2">Sinh viên</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
-              <a href="./them_sinh_vien.php" class="btn btn-sm btn-outline-secondary">
+              <a href="../them_sinh_vien.php" class="btn btn-sm btn-outline-secondary">
                 Thêm sinh viên
               </a>
             </div>
           </div>
           <div class="table-responsive">
+            <?php
+              include '../autoload/autoload.php';
+
+              $sv = new SinhVienController();
+              $sv->fetchAll();
+            ?>
             <table class="table table-striped table-sm">
               <thead>
                 <tr>

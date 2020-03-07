@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Dashboard Template · Bootstrap</title>
+    <title>Cập nhật sinh viên</title>
 
     <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <meta name="theme-color" content="#563d7c">
@@ -39,10 +39,10 @@
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link" href="../">Tổng quan</a>
+                <a class="nav-link" href="./">Tổng quan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./includes/sinh_vien.inc.php">Sinh viên</a>
+                <a class="nav-link active" href="./sinh_vien.php">Sinh viên</a>
               </li>
             </ul>
           </div>
@@ -50,18 +50,12 @@
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Thêm sinh viên</h1>
+            <h1 class="h2">Cập nhật thông tin sinh viên</h1>
           </div>
           <div class="container">
-            <div class="py-5 text-center">
-              <h2>Nhập thông tin sinh viên</h2>
-              <p class="lead">Điền các field bên dưới để thêm sinh viên.</p>
-            </div>
-
             <div class="row">
               <div class="col-md-12 order-md-1">
-                <h4 class="mb-3">Thông tin</h4>
-                <form action="./includes/them_sinh_vien.inc.php" method="post" class="needs-validation" novalidate>
+                <form action="includes/sinhvien.inc.php" method="post" class="needs-validation" novalidate>
 
                   <div class="mb-3">
                     <label for="msv">Mã sinh viên</label>
