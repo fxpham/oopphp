@@ -10,6 +10,12 @@ function getHocSinhs($dbh) {
   $stmt = $pdo->query($sql);
 
   while($row = $stmt->fetch()) {
+    // $row = [
+    //   'ho' => 'Nguyen',
+    //   'ten' => 'A',
+    //   'tuoi' => 22,
+    //   'que_quan' => 'HCM',
+    // ]
     echo 'Ho: ' . $row['ho'] . '<br>';
     echo 'Ten: ' . $row['ten'] . '<br>';
     echo 'Tuoi: ' . $row['tuoi'] . '<br>';
