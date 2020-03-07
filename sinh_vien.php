@@ -66,6 +66,7 @@
                   <th>Tên</th>
                   <th>Giới tính</th>
                   <th>Ngày sinh</th>
+                  <th>Tác vụ</th>
                 </tr>
               </thead>
               <tbody>
@@ -75,6 +76,12 @@
                   <td>ipsum</td>
                   <td>dolor</td>
                   <td>sit</td>
+                  <td>
+                  <div class="btn-group mr-2">
+                    <a href="./sua_sinh_vien.php" class="btn btn-sm btn-outline-secondary">Sửa</a>
+                    <a href="./sua_sinh_vien.php" class="btn btn-sm btn-outline-secondary">Xoá</a>
+                  </div>
+                  </td>
                 </tr>
               </tbody>
             </table>
