@@ -15,7 +15,7 @@ $loai_du_lieu = $_POST['loai_du_lieu'];
 
 switch ($loai_du_lieu) {
   case 'sinh_vien':
-    $sinh_vien = new SinhVien($cmnd, $ho, $ten, $ngay_sinh, $gioi_tinh, $dia_chi, $sdt, $msv);
+    $sinh_vien = new SinhVien($cmnd, $ho, $ten, strtotime($ngay_sinh), $gioi_tinh, $dia_chi, $sdt, $msv);
     echo $sinh_vien->getMaSinhVien();
     break;
 
