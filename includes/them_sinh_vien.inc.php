@@ -2,7 +2,7 @@
 
 include '../autoload/autoload.php';
 
-$msv = $_POST['msv'];
+// $msv = $_POST['msv'];
 $ho = $_POST['ho'];
 $ten = $_POST['ten'];
 $gioi_tinh = $_POST['gioi_tinh'];
@@ -15,7 +15,7 @@ $loai_du_lieu = $_POST['loai_du_lieu'];
 
 switch ($loai_du_lieu) {
   case 'sinh_vien':
-    $sinh_vien = new SinhVien($cmnd, $ho, $ten, $ngay_sinh, $gioi_tinh, $dia_chi, $sdt, $msv);
+    $sinh_vien = new SinhVien($msv, $ho, $ten, $ngay_sinh, $gioi_tinh, $dia_chi, $sdt, $cmnd);
     echo $sinh_vien->getMaSinhVien();
     break;
 

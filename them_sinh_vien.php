@@ -63,7 +63,7 @@
                 <h4 class="mb-3">Thông tin</h4>
                 <form action="./includes/them_sinh_vien.inc.php" method="post" class="needs-validation" novalidate>
 
-                  <div class="mb-3">
+                  <!-- <div class="mb-3">
                     <label for="msv">Mã sinh viên</label>
                     <div class="input-group">
                       <input type="text" class="form-control" id="msv" name="msv" placeholder="Mã sinh viên" required>
@@ -71,7 +71,7 @@
                         Mã sinh viên là bắt buộc.
                       </div>
                     </div>
-                  </div>
+                  </div> -->
 
                   <div class="row">
                     <div class="col-md-6 mb-3">
