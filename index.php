@@ -1,16 +1,19 @@
 <?php
 //Kết nối database
-mysql_connect('localhost','root','');
-//lựa chọn database
-mysql_select_db('c5_bt1_user');
+$con = mysqli_connect("localhost","root","","c5_bt1_user");
 
-?>
+//Truy vấn dữ liệu
+$sql="SELECT * FROM dangnhap";
+if(mysqli_query($con,$sql)) echo "Kết nối thành công"; else "Thất bại";
 
-<?php
-$sql=mysql_query('SELECT * FROM dangnhap');
-while($value=mysql_fetch_array($sql))
+
+echo "<br/>";
+/*
+while($value = mysql_fetch_array($sql))
 {
-	echo $value['username'].'<br/>';
-	echo $value['email'].'<br/>';
+	echo $value["username"]."<br/>";
+	echo $value["email"]."<br/>";
 }
+*/
 ?>
+
