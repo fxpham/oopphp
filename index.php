@@ -1,17 +1,21 @@
 <?php
-$servername = "localhost:1080";
-$username = "root";
+$servername = "localhost";
+$username = "username";
 $password = "password";
 
 try {
-    $conn = new PDO("mysql:host=$servername;dbname=c5_bt1_user","root","");
+    $conn = new PDO("mysql:host=$servername", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Kết nối thành công";
+    $sql = "CREATE DATABASE myDBPDO";
+    // use exec() because no results are returned
+    $conn->exec($sql);
+    echo "Database created successfully<br>";
     }
 catch(PDOException $e)
     {
-    echo "Kết nối thất bại " . $e->getMessage();
+    echo $sql . "<br>" . $e->getMessage();
     }
-?>
 
+$conn = null;
+?>
