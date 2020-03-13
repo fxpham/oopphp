@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html>
 <body>
 
 <?php
 echo "<table style='border: solid 1px black;'>";
- echo "<tr><th>Id</th><th>Firstname</th><th>Lastname</th></tr>";
+echo "<tr><th>Id</th><th>Firstname</th><th>Lastname</th></tr>";
 
 class TableRows extends RecursiveIteratorIterator {
     function __construct($it) {
@@ -24,15 +25,15 @@ class TableRows extends RecursiveIteratorIterator {
     }
 }
 
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDBPDO";
+$servername = "localhost:3306";
+$username = "nguyenhong";
+$password = "123456";
+$dbname = "mydb";
 
 try {
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("SELECT id, firstname, lastname FROM MyGuests");
+    $stmt = $conn->prepare("SELECT * FROM user");
     $stmt->execute();
 
     // set the resulting array to associative
