@@ -69,3 +69,13 @@ Các nhân viên có thuộc tính riêng: công việc.
 **Yêu cầu**:
 1. Xây dựng các lớp CongNhan, KySu, NhanVien kế thừa từ lớp CanBo.
 2. Khởi tạo danh sách các cán bộ và xuất ra danh sách thông tin các cán bộ dưới dạng bảng
+
+
+
+---------- DATABASE
+
+1. Ket noi database su dung PDO
+2. Tao Database
+3. Tao bang
+4. Insert du lieu vao bang
+5. Lay du lieu
