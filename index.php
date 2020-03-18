@@ -11,14 +11,14 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12 order-md-1">
-      <form action="includes/sinhvien.inc.php" method="post" class="needs-validation" novalidate="novalidate">
+      <form action="./includes/sinhvien.inc.php" method="post" class="needs-validation" novalidate="novalidate">
         <div class="mb-3">
           <table width="366" border="1">
-            <tr>
+            <!-- <tr>
               <td width="142">ID_Mã sinh viên :</td>
               <td width="208"><label for="Idsv"></label>
               <input type="text" name="Idsv" id="Idsv" /></td>
-            </tr>
+            </tr> -->
             <tr>
               <td>Tên sinh viên: </td>
               <td><label for="tensv"></label>
