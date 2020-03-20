@@ -16,9 +16,9 @@
           <table width="366" border="1">
             <tr>
               <td width="142">Mã sinh viên :</td>
-              <td width="208"><label for="Idsv"></label>
+              <td width="208"><label for="masv"></label>
               <input type="text" name="masv" id="masv" /></td>
-            </tr> 
+            </tr>
             <tr>
               <td>Tên sinh viên: </td>
               <td><label for="tensv"></label>
