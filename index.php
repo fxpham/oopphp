@@ -56,8 +56,8 @@
           </table>
         </div>
         <hr class="mb-4" />
-        <button class="2" type="submit" >Thêm SV
-      </button></form>
+        <button class="2" type="submit" >Thêm SV</button><button type="submit" >Hủy</button>
+      </form>
     </div>
   </div>
 </div>
