@@ -1,4 +1,5 @@
 <?php
+  $masv = $_POST['masv'];
   $tensv = $_POST['tensv'];
   $dob = strtotime($_POST['ngay_sinh']);
   $gioi_tinh = $_POST['gioi_tinh'];
@@ -16,8 +17,8 @@
     $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = "INSERT INTO sinh_vien (ten, ngay_sinh, gioi_tinh, que_quan, nam_hoc, lop)
-    VALUES ('$tensv', $dob, $gioi_tinh, '$quequan', '$namhoc', '$lophoc')";
+    $sql = "INSERT INTO sinh_vien (MaSV,ten, ngay_sinh, gioi_tinh, que_quan, nam_hoc, lop)
+    VALUES ('$masv','$tensv', $dob, $gioi_tinh, '$quequan', '$namhoc', '$lophoc')";
     // use exec() because no results are returned
     $conn->exec($sql);
     echo "Da them sinh vien.";
