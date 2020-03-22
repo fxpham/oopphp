@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>XÓA SINH VIÊN</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./js/huy.js"></script>
 </head>
 
 <body>
@@ -24,8 +26,8 @@
         </div>
         <hr class="mb-4" />
         <button class="2" type="submit" >Xóa</button>
-        
         </form>
+        <button class="2" id="btn-huy" type="submit" >Hủy</button>
     </div>
   </div>
 </div>
