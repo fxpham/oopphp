@@ -1,0 +1,8 @@
+Một cookie thường được sử dụng để xác định người dùng.
+Cookie là một tệp nhỏ mà server nhúng(lưu) vào máy tính của người dùng.
+Mỗi lần người dùng sử dụng cung 1 máy tính với cùng 1 trình duyệt, nó cũng sẽ gửi cookie.
+Với PHP, bạn có thể tạo và lấy các giá trị cookie.
+
+Xem cookie trên trình duyệt chrome
+
+Chrome dev tool -> Application -> Cookies
