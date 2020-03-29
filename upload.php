@@ -1,8 +1,15 @@
 <?php
+// Thư mục chứa file upload.
 $target_dir = "uploads/";
+// print_r($_FILES);
+// Đường dẫn lưu file phía server.
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
+// print_r($target_file);
+// Image type : png|jpg|gif
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+// print_r(' ----- ');
+// print_r($imageFileType); exit;
 // Check if image file is a actual image or fake image
 if(isset($_POST["submit"])) {
   $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
@@ -36,6 +43,7 @@ if ($uploadOk == 0) {
 } else {
   if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
       echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+      echo '<img src="'. $target_file . '" />';
   } else {
       echo "Sorry, there was an error uploading your file.";
   }
