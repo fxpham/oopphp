@@ -10,7 +10,9 @@
     // Set session variables
     $_SESSION["favcolor"] = "green";
     $_SESSION["favanimal"] = "cat";
-    echo "Session variables are set.";
+    echo "Session variables are set.<br>";
+    // Xem các giá trị được lưu trong session.
+    // print_r($_SESSION);
   ?>
 
   </body>
