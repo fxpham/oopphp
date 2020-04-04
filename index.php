@@ -1,25 +1,37 @@
-<?php
-  // Swift Mailer Library
-  require_once './vendor/swiftmailer/lib/swift_required.php';
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Gui mail</title>
+</head>
 
-  // Mail Transport
-  $transport = Swift_SmtpTransport::newInstance('ssl://smtp.gmail.com', 465)
-      ->setUsername('username@gmail.com') // Your Gmail Username
-      ->setPassword('my_secure_gmail_password'); // Your Gmail Password
+<body>
+<div class="1">
+  <h1 class="h2">Gui mail</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 order-md-1">
+      <form action="./send_mail.php" method="post" class="needs-validation" novalidate="novalidate">
+        <div class="mb-3">
+            <div>
+                <label>Email nguoi nhan: </label>
+                <input type="text" name="to" id="to" />
+            </div>
+            <div>
+                <label>Tieu de: </label>
+                <input type="text" name="subject" id="subject" />
+            </div>
+            <div>
+                <label>Noi dung: </label>
+                <textarea type="text" name="body" id="body"></textarea>
+            </div>
 
-  // Mailer
-  $mailer = Swift_Mailer::newInstance($transport);
+        </div>
+        <input class="btn" type="submit" value="Gui mail"/>
+      </form>
+    </div>
+  </div>
+</div>
 
-  // Create a message
-  $message = Swift_Message::newInstance('Wonderful Subject Here')
-      ->setFrom(array('sender@example.com' => 'Sender Name')) // can be $_POST['email'] etc...
-      ->setTo(array('receiver@example.com' => 'Receiver Name')) // your email / multiple supported.
-      ->setBody('Here is the <strong>message</strong> itself. It can be text or <h1>HTML</h1>.', 'text/html');
-
-  // Send the message
-  if ($mailer->send($message)) {
-      echo 'Mail sent successfully.';
-  } else {
-      echo 'I am sure, your configuration are not correct. :(';
-  }
-?>
+</body>
+</html>
