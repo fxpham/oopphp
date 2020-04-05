@@ -1,0 +1,16 @@
+Bài tập tổng hợp
+
+Xây dựng 1 website quản lý thông tin sinh viên với các chức năng
+(Sử dụng thiết kế database ở bài tập trước)
+
+a. Thêm sinh viên (cho phép upload hình)
+b. Sửa sinh viên
+c. Xoá sinh viên
+d. Màn hình quản lý với danh sách sinh viên và các tác vụ cho mỗi sinh viên
+e. Đăng nhập (sử dụng session) với chức năng remember me (*)
+f. Gửi mail thông báo kết quả học tập
+g. Xuất thông tin sinh viên dưới dạng file txt.
+
+(*) Chức năng remember me
+Nếu người dùng check vào checkbox ghi nhớ đăng nhập
+thì lần đăng nhập sau sẽ tự điền tên đăng ký của user vào.

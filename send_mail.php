@@ -10,9 +10,9 @@ $subject = $_POST['subject'];
 $body = $_POST['body'];
 
 // Config smtp
-$from = 'Email_nguoi_gui';
-$display_name = 'Ten_nguoi_gui';
-$password = "Mat_khau";
+$from = 'ypx.weebpal@gmail.com';
+$display_name = 'Y Pham';
+$password = "Weebp@l123";
 //
 $mail = new PHPMailer();
 $mail->IsSMTP();
@@ -30,9 +30,9 @@ $mail->IsHTML(true);
 $mail->AddAddress($to);
 $mail->SetFrom($from, $display_name);
 $mail->Subject = $subject;
-$content = $body;
-
-$mail->MsgHTML($content);
+$mail->MsgHTML($body);
+// Attachment
+$mail->AddAttachment('./attach/file_dinh_kem.txt', 'file.txt');
 //Gui mail
 if(!$mail->Send()) {
   echo "Error while sending Email.";

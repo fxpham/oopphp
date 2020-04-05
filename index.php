@@ -26,6 +26,11 @@
                 <textarea type="text" name="body" id="body"></textarea>
             </div>
 
+            <div>
+                <label>File dinh kem: </label>
+                <input type="file" name="attach" id="attach"></input>
+            </div>
+
         </div>
         <input class="btn" type="submit" value="Gui mail"/>
       </form>
