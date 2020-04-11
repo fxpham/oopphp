@@ -55,7 +55,6 @@ class KhoaRepo extends Database {
     try {
       $sql = 'UPDATE ' . self::TABLE_NAME;
       $fields = array_keys($data);
-      $sql .= implode(', ', $fields);
 
       $sql .= ' SET ';
       $alias = [];
@@ -64,10 +63,9 @@ class KhoaRepo extends Database {
         $alias[] = $field . '=:' . $field;
       }
       $sql .= implode(', ', $alias);
-      $sql .= ') WHERE MaKhoa=:MaKhoa';
-
-      $this->stmt = $this->pdo->prepare($sql);
-      return $this->stmt->execute($data);
+      $sql .= ' WHERE MaKhoa=:MaKhoa';
+      $stmt = $this->connect()->prepare($sql);
+      return $stmt->execute($data);
     }
     catch (PDOException $e) {
       echo $sql . '<br>' . $e->getMessage();
