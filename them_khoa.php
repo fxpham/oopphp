@@ -39,7 +39,7 @@
                     </div>
                   </div>
                   <input type="hidden" name="maKhoa" value="">
-                  <input type="hidden" name="loai_du_lieu" value="khoa" />
+                  <input type="hidden" name="action" value="save" />
                   <hr class="mb-4">
                   <button class="btn btn-primary btn-lg btn-block" type="submit">Lưu</button>
                 </form>

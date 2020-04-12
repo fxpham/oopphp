@@ -2,21 +2,28 @@
 
 include './autoload.php';
 
-$ma_khoa = $_POST['maKhoa'];
-$ten = $_POST['tenKhoa'];
-$nganh = $_POST['nganh'];
+$action = $_POST['action'];
 
-$type = $_POST['loai_du_lieu'];
+switch ($action) {
+  case 'save':
+    $ma_khoa = $_POST['maKhoa'];
+    $ten = $_POST['tenKhoa'];
+    $nganh = $_POST['nganh'];
 
-switch ($type) {
-  case 'khoa':
     $khoa = new Khoa($ma_khoa, $ten, $nganh);
     $khoa->save();
+
     $url = 'khoa.php';
     header('Location: ' .$url);
     break;
-
-    default:
+  case 'delete':
+    $ma_khoa = $_POST['maKhoa'];
+    $repo = new KhoaRepo();
+    $repo->delete($ma_khoa);
+    $url = 'khoa.php';
+    header('Location: ' .$url);
+    break;
+  default:
     echo "Error!";
     break;
 }

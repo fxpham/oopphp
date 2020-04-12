@@ -74,7 +74,7 @@ class KhoaRepo extends Database {
 
   public function delete($id) {
     $sql = "DELETE FROM ". self::TABLE_NAME . " WHERE MaKhoa=?";
-    $this->stmt = $this->pdo->prepare($sql);
-    return $this->stmt->execute([$id]);
+    $stmt = $this->connect()->prepare($sql);
+    return $stmt->execute([$id]);
   }
 }
