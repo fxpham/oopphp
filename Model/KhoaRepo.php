@@ -1,9 +1,19 @@
 <?php
 
+// use Khoa;
+
+/**
+ * Class KhoaRepo tuong tac voi database.
+ */
 class KhoaRepo extends Database {
 
   const TABLE_NAME = 'khoa';
 
+  /**
+   * Lay danh sach khoa
+   *
+   * @return array
+   */
   public function getAll() {
     $sql = "SELECT * FROM " . self::TABLE_NAME;
     $stmt = $this->connect()->query($sql);
@@ -11,6 +21,12 @@ class KhoaRepo extends Database {
     return $results;
   }
 
+  /**
+   * Get mot khoa dua tren id
+   *
+   * @param [type] $id
+   * @return void
+   */
   public function get($id) {
     $sql = "SELECT * FROM " . self::TABLE_NAME . " WHERE MaKhoa=?";
     $stmt = $this->connect()->prepare($sql);
@@ -21,7 +37,13 @@ class KhoaRepo extends Database {
     return NULL;
   }
 
-  public function add($khoa) {
+  /**
+   * Them khoa
+   *
+   * @param [type] $khoa
+   * @return void
+   */
+  public function add(Khoa $khoa) {
     $data = [
       'TenKhoa' => $khoa->getTenKhoa(),
       'Nganh' => $khoa->getNganh(),
@@ -46,7 +68,13 @@ class KhoaRepo extends Database {
     }
   }
 
-  public function update($khoa) {
+  /**
+   * Cap nhat khoa
+   *
+   * @param Khoa $khoa
+   * @return void
+   */
+  public function update(Khoa $khoa) {
     $data = [
       'MaKhoa' => $khoa->getMaKhoa(),
       'TenKhoa' => $khoa->getTenKhoa(),
@@ -72,6 +100,12 @@ class KhoaRepo extends Database {
     }
   }
 
+  /**
+   * Xoa khoa
+   *
+   * @param [type] $id
+   * @return void
+   */
   public function delete($id) {
     $sql = "DELETE FROM ". self::TABLE_NAME . " WHERE MaKhoa=?";
     $stmt = $this->connect()->prepare($sql);

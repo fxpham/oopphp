@@ -65,14 +65,24 @@ class Khoa {
     return $this;
   }
 
+  /**
+   * Luu du lieu xuong database.
+   *
+   * @return void
+   */
   public function save() {
     $repo = new KhoaRepo();
+    // Neu chua co ma khoa thi tao moi.
     if (empty($this->getMaKhoa())) {
       return $repo->add($this);
     }
+    // Cap nhat thong tin khoa.
     return $repo->update($this);
   }
 
+  /**
+   * Xoa khoa.
+   */
   public function delete() {
     $repo = new KhoaRepo();
     $repo->delete($this->getMaKhoa());

@@ -22,30 +22,6 @@
             <div class="table-responsive">
               <? print danh_sach_khoa(); ?>
             </div>
-            <!-- <div class="table-responsive">
-              <table class="table table-striped table-sm">
-                <thead>
-                  <tr>
-                    <th>Mã Khoa</th>
-                    <th>Tên</th>
-                    <th>Ngành</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1,001</td>
-                    <td>Lorem</td>
-                    <td>ipsum</td>
-                    <td>
-                    <div class="btn-group mr-2">
-                      <a href="./sua_khoa.php" class="btn btn-sm btn-outline-secondary">Sửa</a>
-                      <a href="./xoa_khoa.php" class="btn btn-sm btn-outline-secondary">Xoá</a>
-                    </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div> -->
         </main>
 
       </div>

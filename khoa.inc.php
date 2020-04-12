@@ -33,14 +33,16 @@ function danh_sach_khoa() {
     'Mã Khoa',
     'Tên',
     'Ngành',
+    'Tác vụ',
   ];
   $table = '<table class="table table-striped table-sm">';
+  // Header table.
   $thead = '<thead><tr>';
   foreach ($tieu_de as $th) {
     $thead .= "<th>$th</th>";
   }
   $thead .= '</tr></thead>';
-
+  // END.
   $tbody = '<tbody>';
   $repo = new KhoaRepo();
   $danh_sach_khoa = $repo->getAll();
