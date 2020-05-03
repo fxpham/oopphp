@@ -4,9 +4,9 @@
       <li class="nav-item">
         <a class="nav-link " href="./">Tổng quan</a>
       </li>
-      <!-- <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link" href="./sinh_vien.php">Sinh viên</a>
-      </li>  -->
+      </li> 
       <li class="nav-item">
         <a class="nav-link active" href="./khoa.php">Khoa</a>
       </li>

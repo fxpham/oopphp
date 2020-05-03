@@ -16,7 +16,7 @@ class SinhVien {
                               string $ho,
                               string $ten,
                               int $ngay_sinh,
-                              string $gioi_tinh,
+                              int $gioi_tinh,
                               string $dien_thoai,
                               string $dia_chi,
                               string $lop = '') {
@@ -34,7 +34,7 @@ class SinhVien {
   /**
    * Get the value of maSV
    */
-  public function getmaSV() {
+  public function getMaSV() {
     return $this->maSV;
   }
 
@@ -43,7 +43,7 @@ class SinhVien {
    *
    * @return  self
    */
-  public function setmaSV($maSV) {
+  public function setMaSV($maSV) {
     $this->maSV = $maSV;
 
     return $this;
@@ -160,7 +160,7 @@ class SinhVien {
   /**
    * Get the value of lop
    */
-  public function getLop() {
+  public function getMaLop() {
     return $this->lop;
   }
 
@@ -169,7 +169,7 @@ class SinhVien {
    *
    * @return  self
    */
-  public function setLop($lop) {
+  public function setMaLop($lop) {
     $this->lop = $lop;
 
     return $this;
@@ -177,7 +177,7 @@ class SinhVien {
 
   public function save() {
     $repo = new SinhVienRepo();
-    if ($this->getmaSV()) {
+    if (!empty($this->getMaSV())) {
       return $repo->update($this);
     }
     return $repo->add($this);
@@ -185,7 +185,7 @@ class SinhVien {
 
   public function delete() {
     $repo = new SinhVienRepo();
-    $repo->delete($this->getmaSV());
+    $repo->delete($this->getMaSV());
   }
 
 
