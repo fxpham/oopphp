@@ -10,6 +10,7 @@ class SinhVien {
   private $dienThoai;
   private $diaChi;
   private $lop;
+  private $hinh;
 
 
   public function __construct(string $msv,
@@ -19,6 +20,7 @@ class SinhVien {
                               int $gioi_tinh,
                               string $dien_thoai,
                               string $dia_chi,
+                              string $hinh='',
                               string $lop = '') {
     $this->maSV = $msv;
     $this->ho = $ho;
@@ -28,6 +30,7 @@ class SinhVien {
     $this->diaChi = $dia_chi;
     $this->dienThoai = $dien_thoai;
     $this->lop = $lop;
+    $this->hinh = $hinh;
   }
 
 
@@ -190,4 +193,24 @@ class SinhVien {
 
 
 
+
+  /**
+   * Get the value of hinh
+   */ 
+  public function getHinh()
+  {
+    return $this->hinh;
+  }
+
+  /**
+   * Set the value of hinh
+   *
+   * @return  self
+   */ 
+  public function setHinh($hinh)
+  {
+    $this->hinh = $hinh;
+
+    return $this;
+  }
 }

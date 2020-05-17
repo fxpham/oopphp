@@ -1,4 +1,4 @@
-
+<?php include './lop.inc.php'; ?>
 <!doctype html>
 <html lang="vi">
   <?php
@@ -32,10 +32,10 @@
                     </div>
                   </div>
                   <div class="mb-3">
-                    <label for="maKhoa">Mã Khoa</label>
-                    <input type="text" class="form-control" id="maKhoa" name="maKhoa">
+                    <label for="maKhoa">Khoa</label>
+                    <?php print danh_sach_khoa(); ?>
                     <div class="invalid-feedback">
-                      Vui lòng nhập thông tin Lớp.
+                      Vui lòng nhập thông tin khoa.
                     </div>
                   </div>
                   <input type="hidden" name="maLop" value="">

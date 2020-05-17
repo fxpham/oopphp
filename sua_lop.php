@@ -1,6 +1,5 @@
 <?php
-  include './autoload.php';
-
+  include './lop.inc.php';
   $ma_lop = $_GET['MaLop'];
   $repo = new LopRepo();
   $lop = $repo->get($ma_lop);
@@ -40,7 +39,7 @@
                   </div>
                   <div class="mb-3">
                     <label for="maKhoa">Mã Khoa</label>
-                    <input type="text" class="form-control" id="maKhoa" name="maKhoa" value="<?php print $lop['MaKhoa']; ?>">
+                    <?php print danh_sach_khoa($lop['MaKhoa']); ?>
                     <div class="invalid-feedback">
                       Vui lòng nhập thông tin Mã Khoa.
                     </div>
